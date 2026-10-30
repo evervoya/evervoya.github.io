@@ -132,6 +132,7 @@ section{border-top:1px solid color-mix(in srgb,var(--gold) 22%,transparent)}
 
 /* cards */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.8rem}
+#apps .cards{grid-template-columns:repeat(2,1fr)}
 .card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.6rem 1.5rem 1.7rem;display:flex;flex-direction:column;gap:.72rem;min-width:0;box-shadow:0 1px 2px rgba(0,0,0,.04),0 14px 34px -24px rgba(0,0,0,.4);transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
 .card::before{content:"";position:absolute;inset:0 0 auto;height:2px;border-radius:16px 16px 0 0;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--gold) 75%,transparent),transparent);opacity:0;transition:opacity .25s ease}
 .card:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--gold) 38%,var(--line));box-shadow:0 1px 2px rgba(0,0,0,.05),0 22px 46px -24px rgba(0,0,0,.5)}
@@ -293,25 +294,31 @@ footer{border-top:1px solid color-mix(in srgb,var(--gold) 24%,transparent);backg
         <span class="num">02</span>
         <div>
           <span class="eyebrow">Apps</span>
-          <h2>In preparation.</h2>
+          <h2>Four tools, one studio.</h2>
         </div>
       </div>
-      <p class="sec-sub">Our first releases are being built now. When an app ships, it will appear here with its description, support, and the data practices that apply to it. Nothing is listed yet.</p>
+      <p class="sec-sub">Small, focused Android apps. ProductLog is the first to reach Google Play; the others are in development. Each app gets its own page, support and privacy policy when it ships.</p>
       <div class="cards">
         <div class="card">
-          <span class="chip">Coming soon</span>
-          <h3>First release</h3>
-          <p>Our initial app is in preparation.</p>
+          <span class="chip">Closed testing · Play soon</span>
+          <h3>ProductLog</h3>
+          <p>Home appliance asset management: products, receipts, warranties, claims and care history, kept on your phone. Scan a receipt or warranty card, get reminders before coverage ends, export a claim pack when something breaks.</p>
+          <p><a href="/apps/productlog.html">About ProductLog</a> · <a href="/privacy/productlog.html">Privacy policy</a></p>
         </div>
         <div class="card">
-          <span class="chip">Coming soon</span>
-          <h3>More to follow</h3>
-          <p>Further small, focused tools are planned.</p>
+          <span class="chip">In development</span>
+          <h3>Genivo</h3>
+          <p>A one-on-one trivia duel: pick a category, answer in turns, challenge friends online or nearby, and climb the rankings. Eight main categories, six languages.</p>
         </div>
         <div class="card">
-          <span class="chip mute">Notify me</span>
-          <h3>Hear when we ship</h3>
-          <p>Email the studio and we will let you know when the first app is available.</p>
+          <span class="chip">In development</span>
+          <h3>Optivo</h3>
+          <p>SEO insight for your own sites with the AI provider you already use: bring your own API key, run page checks, get plain-language suggestions.</p>
+        </div>
+        <div class="card">
+          <span class="chip">In development</span>
+          <h3>Sentivo</h3>
+          <p>Wellbeing signals from the notifications already on your phone, calculated on the device. An informational companion, not a medical service.</p>
         </div>
       </div>
     </div>
@@ -359,10 +366,10 @@ footer{border-top:1px solid color-mix(in srgb,var(--gold) 24%,transparent);backg
       </div>
       <div class="lede-grid">
         <div>
-          <p>No final application privacy policy has been published yet, because our applications and their data practices are not finalized.</p>
-          <p class="muted">Before an app is released, its own policy will describe data collection and use, third-party SDKs including advertising where applicable, permissions, retention, deletion options, and a privacy contact.</p>
+          <p>Each app has its own privacy policy, published here before it is released. It describes, feature by feature, what stays on the device, what leaves it and why, the third-party SDKs involved (including advertising where applicable), permissions, retention and deletion.</p>
+          <p class="muted"><a href="/privacy/productlog.html">Evervoya ProductLog — privacy policy</a> (effective 30 October 2026). Policies for Genivo, Optivo and Sentivo follow when those apps reach testing.</p>
         </div>
-        <p class="note">This section is a status notice, not a privacy policy for any application. We do not claim that future applications will be free of tracking.</p>
+        <p class="note">Every Evervoya app also carries a Disclaimer &amp; limitation of liability and Terms of Service inside the app (Settings → Legal), agreed on first run.</p>
       </div>
     </div>
   </section>

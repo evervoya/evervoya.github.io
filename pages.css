@@ -1,0 +1,51 @@
+/* Shared styles for Evervoya sub-pages (apps/, privacy/). Same tokens as the landing page. */
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%;height:auto}
+:root{
+  --bg:#FAF9F3; --surface:#FFFFFF; --surface-2:#F2EFE4;
+  --fg:#0E2A1E; --muted:#4E6257; --faint:#8A9A8E;
+  --line:rgba(14,42,30,.12);
+  --green:#0C6B49; --gold:#9A7B2E; --gold-soft:rgba(154,123,46,.14);
+  --font-display:"Fraunces",Georgia,"Times New Roman",serif;
+  --font-body:"Hanken Grotesk",system-ui,-apple-system,Segoe UI,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --maxw:860px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#07140E; --surface:#0C1C14; --surface-2:#10251A;
+  --fg:#EDF3EE; --muted:#93A89C; --faint:#6E8378;
+  --line:rgba(237,243,238,.12);
+  --green:#56C091; --gold:#D8B45A; --gold-soft:rgba(216,180,90,.16);
+  color-scheme:dark;
+}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);line-height:1.6;font-size:1.02rem}
+a{color:var(--green)}
+header.top{border-bottom:1px solid var(--line);background:var(--surface)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 16px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+.brand{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--font-display);font-weight:600;text-decoration:none;color:var(--fg)}
+.brand .mark{width:26px;height:26px;color:var(--gold)}
+nav.links{display:flex;gap:1.1rem;font-size:.95rem}
+nav.links a{color:var(--muted);text-decoration:none}
+nav.links a:hover{color:var(--fg)}
+main{padding:2.6rem 0 4rem}
+.eyebrow{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--faint)}
+h1{font-family:var(--font-display);font-weight:600;font-size:clamp(2rem,4.5vw,2.8rem);line-height:1.12;margin:.3rem 0 .8rem}
+h2{font-family:var(--font-display);font-weight:600;font-size:1.5rem;margin:2.2rem 0 .6rem}
+h3{font-size:1.1rem;margin:1.4rem 0 .4rem}
+p,li{color:var(--muted)}
+.lede{font-size:1.15rem;color:var(--fg)}
+.chip{display:inline-flex;font-family:var(--font-mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid color-mix(in srgb,var(--gold) 34%,var(--line));border-radius:999px;padding:.3rem .66rem;margin-right:.4rem}
+.meta{font-family:var(--font-mono);font-size:.8rem;color:var(--faint);margin:0 0 1.6rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.4rem 1.5rem;margin:1.2rem 0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+@media (max-width:720px){.grid{grid-template-columns:1fr}nav.links{display:none}}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;padding:.6rem .5rem;border-bottom:1px solid var(--line)}
+th{color:var(--fg);font-weight:600}
+td{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;border-radius:999px;padding:.72rem 1.2rem;color:var(--fg);border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line))}
+.btn:hover{border-color:var(--gold)}
+footer{border-top:1px solid var(--line);padding:1.6rem 0 2.4rem;font-size:.9rem;color:var(--faint)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
+footer a{color:var(--muted);text-decoration:none;margin-right:1rem}
+.note{border-left:3px solid var(--gold);padding:.6rem 1rem;background:var(--gold-soft);border-radius:0 12px 12px 0;color:var(--fg)}
