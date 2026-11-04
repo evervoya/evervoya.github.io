@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy — Evervoya Sentivio</title>
+<meta name="description" content="Privacy policy of Evervoya Sentivio: how your notifications are read on your device, what the optional AI companion, Pulse (Health Connect), encrypted backup, feedback, ads and purchases process, and how to delete your data.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/pages.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="1.6"/><path d="M16 5 L19.4 16 L16 27 L12.6 16 Z" fill="currentColor" opacity="0.9"/><circle cx="16" cy="16" r="2.1" style="fill:var(--surface-2)"/></svg>
+      Evervoya
+    </a>
+    <nav class="links">
+      <a href="/apps/sentivo.html">Sentivio</a>
+      <a href="/#support">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <span class="eyebrow">Privacy policy</span>
+    <h1>Evervoya Sentivio</h1>
+    <p class="meta">Effective 3 November 2026 · Applies to the Android app "Sentivio" (package <code>com.evervoya.sentivo</code>) by Evervoya Studio</p>
+
+    <p class="lede">Sentivio helps you understand the tone of the social messages that already reach your phone. It is built to work on your device: your notifications are read and analysed on the phone itself, not on any Evervoya server. This policy describes, feature by feature, what the app stores, what leaves the device and why, which third-party services are involved, and how you delete your data. Sentivio is not a medical, psychological, or emergency service — see the note at the end.</p>
+
+    <h2>1. Data that stays on your device</h2>
+    <p>By default everything Sentivio works with is stored only in the app's private storage on your device: the tone readings, daily summaries, "safety signals", check-ins and your notes, label corrections, and your settings. There is no Evervoya account server, and the app does not upload this data. It leaves your device only through the optional features described below (the AI companion, encrypted backup, feedback and ads), and only when you turn those on or use them.</p>
+
+    <h2>2. Reading your notifications</h2>
+    <p>With your permission, Sentivio uses Android's notification access (a notification listener service) to read the notifications that other messaging and social apps post to your phone, so it can estimate their tone and show you summaries and signals. This reading and analysis happen <strong>on the device</strong>; the notification text is not sent to Evervoya. You grant notification access yourself in Android settings and can withdraw it at any time, which stops all reading. The optional "Focus" feature can only snooze notifications that have already arrived from apps you choose; it never snoozes safety-related notifications or notifications whose content cannot be read, and it does not block or delay opening other apps.</p>
+
+    <h2>3. Optional AI companion</h2>
+    <p>The companion is an automated AI chat (not a person, counsellor or therapist) that you can choose to use with <em>your own</em> Google Gemini API key. When you use it, the app sends to Google's Gemini API, over your key: what you type to it, your aggregated tone numbers, and any single comment you choose to discuss (without the writer's name). Google processes these under its API terms; <strong>on Google's free tier, Google may use them to improve its products</strong>, so avoid sharing anything you would not want used that way. Evervoya does not receive this chat. To support the companion, incoming comment texts may be kept <strong>encrypted on your device for up to 7&nbsp;days</strong>; you can switch this off or delete them at any time in the app. If you never enable the companion, none of this applies.</p>
+
+    <h2>4. Optional Sentivio Pulse (Health Connect)</h2>
+    <p>If you turn on Pulse and grant permission in Android's Health Connect, Sentivio <em>reads</em> heart rate, resting heart rate, heart-rate variability, sleep and steps from your phone or watch to compare them with your own usual values and show plain-language words. Pulse only reads these values; it <strong>keeps nothing and sends nothing</strong> — the comparison happens on the device and no health data is stored by the app or transmitted. You grant and revoke this access in Health Connect. Pulse is not a medical device and gives no diagnosis.</p>
+
+    <h2>5. Optional Google sign-in and encrypted backup</h2>
+    <p>You can use Sentivio fully without an account; without signing in, nothing here uses the network and your data stays only on this device. If you choose to sign in, Google's Credential Manager (Sign in with Google) returns your Google account identifier, display name, e-mail address and profile picture URL, which the app stores on your device as the owner identity. Sign-in is used only to enable an <strong>end-to-end encrypted backup in your own Google Drive</strong>: the backup (daily summaries, safety signals, and check-ins including notes) is encrypted on the device with a passphrase you choose before it leaves the phone, and is stored in a hidden app folder in your Drive. The passphrase is never saved or sent anywhere, and <strong>Evervoya never receives a copy of the backup or the passphrase</strong>; if you lose the passphrase the backup cannot be recovered. Label corrections are not backed up (they stay on this device). Creating a backup is a Sentivio Pro feature; restoring is available to everyone. You can delete the cloud backup from the app, sign out (which removes the stored identity), and remove Sentivio's access to your Drive at any time in your Google Account under Security → Third-party connections. Google's own <a href="https://policies.google.com/privacy">privacy policy</a> applies to the sign-in and Drive.</p>
+
+    <h2>6. Feedback you send</h2>
+    <p>When you send feedback from the app, it sends your message, the feedback type, the app version and language, and, if you are signed in, your Google e-mail address (so we can reply) to Evervoya Studio. Device model and Android version are included only if you tick that box. The message is relayed through a Google Apps Script owned by Evervoya Studio and delivered to our mailbox; Google processes it as our service provider. Your notifications, tone data, health data and other records are never included. If sending is not available, the app offers your e-mail app or the clipboard instead. Feedback e-mails are kept as long as needed to handle them.</p>
+
+    <h2>7. Advertising</h2>
+    <p>The free version shows a single banner advertisement on the menu screens, served by the Google Mobile Ads SDK (AdMob). To do this, the SDK may process your device's advertising ID, IP address, approximate location derived from it, and device and app information, under <a href="https://policies.google.com/technologies/ads">Google's advertising policies</a>. Where the law requires it, the app asks for your consent through Google's User Messaging Platform before any ad is loaded, and you can change your choice later in the app. Ad requests carry none of your notification, tone or health data. Advertising stops entirely with Sentivio Pro.</p>
+
+    <h2>8. Purchases and subscription</h2>
+    <p>Sentivio Pro and any other paid items are sold and processed by Google Play Billing under Google Play's terms and privacy policy. The app receives only the purchase and entitlement state and stores it on the device so Pro features stay available while offline. Evervoya does not receive your payment details. Subscriptions renew automatically until cancelled; you manage or cancel renewal in your Google Play account.</p>
+
+    <h2>9. Local notifications</h2>
+    <p>Reminders and check-in prompts are computed and shown on the device by the app itself, using the notification permission you grant. They can be tuned or turned off in Settings or in Android settings. This is separate from the notification <em>reading</em> described in section&nbsp;2.</p>
+
+    <h2>10. Android device backup</h2>
+    <p>Android may include this app's data in the device backup it makes to your Google account (Settings → System → Backup). That backup is run and controlled by Android and by you; the app does not manage it, read it or send anything to it. Turn it off in Android settings if you do not want it.</p>
+
+    <h2>11. Permissions</h2>
+    <table>
+      <tr><th>Permission</th><th>Used for</th></tr>
+      <tr><td>Notification access (read)</td><td>Reading notifications from apps you choose, on the device, to estimate tone (section&nbsp;2). You grant and withdraw it in Android settings.</td></tr>
+      <tr><td>Health Connect (heart rate, resting heart rate, heart-rate variability, sleep, steps)</td><td>Optional Pulse feature; read-only, nothing kept or sent (section&nbsp;4).</td></tr>
+      <tr><td>Internet / network state</td><td>The optional AI companion, encrypted Drive backup, Google sign-in, banner ads, the Pro purchase, and sending feedback. Your records never use it on their own.</td></tr>
+      <tr><td>Post notifications</td><td>Local reminders and check-in prompts (section&nbsp;9).</td></tr>
+    </table>
+
+    <h2>12. Third-party services</h2>
+    <p>Google Gemini API (only with your own key, only if you use the companion), Google Drive (encrypted backup in your own account), Sign in with Google / Credential Manager, Health Connect (on-device, if you use Pulse), Google Mobile Ads SDK and User Messaging Platform, Google Play Billing, and Google Apps Script (feedback relay). Each is governed by Google's terms and privacy policy. The app contains no analytics or crash-reporting SDK.</p>
+
+    <h2>13. Retention and deletion</h2>
+    <p>Your records stay on your device until you delete them in the app or uninstall the app, which removes all app data. Companion comment texts, if retention is on, are kept encrypted for up to 7&nbsp;days and can be switched off or deleted sooner. Sign out removes the stored Google identity; you can delete the cloud backup from the app and revoke Drive access in your Google Account. Health data is never stored by the app. Feedback e-mails can be deleted on request to the address below.</p>
+
+    <h2>14. Children</h2>
+    <p>Sentivio is intended for adults and is not directed to children under 13 (or the age of digital consent where you live). We do not knowingly collect personal data from children.</p>
+
+    <h2>15. Changes and contact</h2>
+    <p>If this policy changes, the new version is published here with a new effective date and summarised in the app's release notes. Questions and requests: <a href="mailto:evervoya.studio@gmail.com">evervoya.studio@gmail.com</a>.</p>
+    <p class="note">Sentivio is not a medical device and does not provide medical, psychological, diagnostic, or crisis services; its insights are automated informational estimates only. In an emergency or crisis, contact your local emergency number or a qualified professional immediately. The in-app Disclaimer &amp; limitation of liability and the Terms of Service (Settings → Legal) apply together with this policy.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Evervoya Sentivio by Evervoya Studio</span>
+    <span><a href="/">Home</a><a href="/apps/sentivo.html">Sentivio</a><a href="/#support">Support</a></span>
+  </div>
+</footer>
+</body>
+</html>
