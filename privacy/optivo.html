@@ -14,7 +14,7 @@ gtag('config', 'G-HEBNJW35FW', {allow_google_signals: false, allow_ad_personaliz
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Privacy Policy — Evervoya Optivo</title>
-<meta name="description" content="Privacy policy of Evervoya Optivo: what stays on your phone, what goes to Google, the websites you scan and the AI you choose, ads, subscriptions, and how to delete your data.">
+<meta name="description" content="Privacy policy of Evervoya Optivo: what stays on your phone, the optional Google sign-in and encrypted device sync, what goes to Google, the websites you scan and the AI you choose, ads, subscriptions, and how to delete your data.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,12 +39,12 @@ gtag('config', 'G-HEBNJW35FW', {allow_google_signals: false, allow_ad_personaliz
   <div class="wrap">
     <span class="eyebrow">Privacy policy</span>
     <h1>Evervoya Optivo</h1>
-    <p class="meta">Effective 12 November 2026 (app version 0.1.4) · Applies to the Android app "Evervoya Optivo" (package <code>com.evervoya.optivo</code>) by Evervoya Studio</p>
+    <p class="meta">Effective 13 November 2026 (app version 0.1.5) · Applies to the Android app "Evervoya Optivo" (package <code>com.evervoya.optivo</code>) by Evervoya Studio</p>
 
-    <p class="lede">Optivo checks the search signals of websites you own or manage. It is local-first: your websites, scans, findings and settings are stored on your phone. There is no sign-in and no account. Evervoya Studio runs no server for Optivo and does not receive your workspace, your website list or your API keys. Some features send data directly from your phone to third parties; this policy lists each one.</p>
+    <p class="lede">Optivo checks the search signals of websites you own or manage. It is local-first: your websites, scans, findings and settings are stored on your phone, and the app works fully without any account. Signing in to Google is optional and identity-only, and an optional Pro feature can sync your workspace — encrypted on your phone — through your own Google Drive. Evervoya Studio runs no server for Optivo and does not receive your workspace, your website list, your API keys or your synced data. Some features send data directly from your phone to third parties (including, with your choices, Google); this policy lists each one.</p>
 
-    <h2>1. No sign-in, no account</h2>
-    <p>Optivo never asks you to sign in to Google or any other service, and Evervoya does not request access to any Google API on your behalf. Optivo stores, on the phone only, the version and date of the Disclaimer &amp; Terms you agreed to. Versions before 0.1.4 offered an optional Google sign-in, Search Console, Google Analytics and Drive sync; these were removed in 0.1.4, and updating the app stops them.</p>
+    <h2>1. Optional Google sign-in (identity only)</h2>
+    <p>Optivo works fully without signing in. You may optionally sign in with your Google account in <em>Settings → Account</em> using Google's "Sign in with Google". When you do, Optivo receives only your Google profile basics — your name, e-mail address and profile photo — and keeps them on the phone to show who is signed in. Signing in requests <strong>no access to your Google data</strong>: no Drive-wide access, no Search Console, no Analytics. You can sign out at any time (<em>Settings → Account → Sign out</em>), which removes these details from the phone. Optivo also stores, on the phone only, the version and date of the Disclaimer &amp; Terms you agreed to. (Versions before 0.1.4 had a different, broader Google sign-in with Search Console, Analytics and Drive sync; that was removed in 0.1.4. The sign-in reintroduced in 0.1.5 is identity-only, and the sync below uses only the app's own private Drive folder.)</p>
 
     <h2>2. What leaves your phone, and when</h2>
     <table>
@@ -52,50 +52,63 @@ gtag('config', 'G-HEBNJW35FW', {allow_google_signals: false, allow_ad_personaliz
       <tr><td>Website scan</td><td>Requests for the page you enter, its robots.txt, sitemap and a few of its internal links</td><td>That website</td><td>Every scan</td></tr>
       <tr><td>PageSpeed (optional)</td><td>The scanned address, with your own Google API key</td><td>Google PageSpeed Insights API</td><td>Only after you add your own key in Settings and tap Agree &amp; connect</td></tr>
       <tr><td>Real-visitor trend (optional)</td><td>The scanned address or its site origin, with your own Google API key</td><td>Google Chrome UX Report API</td><td>Only when your own key is set</td></tr>
+      <tr><td>Google sign-in (optional)</td><td>A one-time request that returns your Google name, e-mail and photo to the phone; no data-access scope</td><td>Google Identity Services</td><td>Only when you tap Sign in with Google</td></tr>
+      <tr><td>Device sync (Pro, optional)</td><td>Your workspace (websites, scans, findings, fix progress), encrypted on the phone with your passphrase before it leaves</td><td>Your own Google Drive — the app's private "app data" folder</td><td>Only after you turn sync on and set a passphrase</td></tr>
       <tr><td>Ask AI through an app</td><td>A prompt with the page address, its public text, Optivo's findings and only the data sources you tick</td><td>The AI app you choose</td><td>Only when you share it</td></tr>
       <tr><td>Direct AI (Pro, optional)</td><td>The same prompt and your own API key</td><td>Google Gemini API or OpenAI, as you choose</td><td>Only after you connect your own key and send a request</td></tr>
       <tr><td>Subscriptions</td><td>Purchase records</td><td>Google Play</td><td>When you buy or restore</td></tr>
-      <tr><td>Ads (free version)</td><td>See section 4</td><td>Google AdMob</td><td>Free version, subject to your consent where required</td></tr>
-      <tr><td>Feedback (optional)</td><td>Your message, its type, app version and language; device model and Android version only if you tick them</td><td>Evervoya Studio, through the studio's Google Apps Script relay</td><td>Only when you tap Send</td></tr>
+      <tr><td>Ads (free version)</td><td>See section 5</td><td>Google AdMob</td><td>Free version, subject to your consent where required</td></tr>
+      <tr><td>Feedback (optional)</td><td>Your message, its type, app version and language; device model and Android version only if you tick them; and, if you are signed in, your Google e-mail address so the studio can reply</td><td>Evervoya Studio, through the studio's Google Apps Script relay</td><td>Only when you tap Send</td></tr>
     </table>
-    <p>Your Google API key and your AI keys are yours: they are used only in requests that go straight from your phone to the provider, and are never sent to Evervoya. Any quota or fees on your own keys are governed by your agreement with that provider.</p>
+    <p>Your Google API key and your AI keys are yours: they are used only in requests that go straight from your phone to the provider, and are never sent to Evervoya. Any quota or fees on your own keys are governed by your agreement with that provider. When you turn on device sync, your workspace is encrypted on the phone and stored in your own Google Drive; Evervoya cannot read it (see section 4).</p>
 
     <h2>3. Data that stays on your phone</h2>
-    <p>Websites, scans, findings, fix progress, saved AI action plans and settings are kept in the app's private storage and are excluded from Android cloud backup and device transfer. Your Google API key and AI API keys are encrypted with a key held in the Android Keystore. The free version keeps the last 5 scans per website, Pro keeps 100. Google responses are cached for a few hours to save your quota.</p>
-    <p>Backup &amp; restore writes your workspace to a file at the place you choose with Android's file picker. Optivo uploads nothing; where the file goes afterwards is up to you.</p>
+    <p>Websites, scans, findings, fix progress, saved AI action plans and settings are kept in the app's private storage and are excluded from Android cloud backup and device transfer. Your Google API key and AI API keys are encrypted with a key held in the Android Keystore. If you sign in, your Google name, e-mail and photo are stored here too, and are removed when you sign out. If you turn on device sync, the key that encrypts your synced data is also kept in this private, Keystore-protected storage. The free version keeps the last 5 scans per website, Pro keeps 100. Google responses are cached for a few hours to save your quota.</p>
+    <p>Backup &amp; restore writes your workspace to a file at the place you choose with Android's file picker. That export is separate from device sync, uploads nothing on its own, and where the file goes afterwards is up to you.</p>
 
-    <h2>4. Advertising</h2>
+    <h2>4. Device sync (Pro, optional)</h2>
+    <p>Optivo Pro can keep your workspace in step across your own devices using your own Google Drive. Evervoya runs no sync server and never holds your data or your passphrase. It works like this:</p>
+    <ul>
+      <li>You turn it on in <em>Settings → Device sync</em> and choose a passphrase (8+ characters). The passphrase never leaves your phone and is never sent to Google or to Evervoya.</li>
+      <li>Your workspace is encrypted on the phone with a key protected by your passphrase <em>before</em> anything is uploaded. Only the encrypted result is stored, in the hidden "app data" folder of your own Google Drive (the <code>drive.appdata</code> scope), which only Optivo on your own devices can see. Optivo requests no other access to your Drive and cannot see your other files.</li>
+      <li>Because the data is end-to-end encrypted and the key is yours, Evervoya cannot read your synced data, and neither can anyone else with access to your Drive who does not have your passphrase. If you forget the passphrase, the cloud copy cannot be recovered; your devices keep their local data.</li>
+      <li>To stop syncing on a device, use <em>Settings → Device sync → Turn off</em>. To remove the encrypted copy from your Google Drive, use <em>Settings → Device sync → Delete cloud copy</em>, which deletes Optivo's files from your Drive app folder and turns sync off on that device. You can also revoke Optivo's Drive access at any time in your Google Account under <em>Security → Third-party apps and services</em>.</li>
+    </ul>
+
+    <h2>5. Advertising</h2>
     <p>The free version shows one banner served by the Google Mobile Ads SDK (AdMob). To do this, the SDK may process your device's advertising ID, IP address, approximate location derived from it, and device and app information, under <a href="https://policies.google.com/technologies/ads">Google's advertising policies</a>. Where the law requires it, the app asks for your consent through Google's User Messaging Platform before any ad is loaded, and "Ad privacy choices" in Settings lets you change it. No website addresses, findings or other workspace content are passed to AdMob. The measurement library bundled in the Ads SDK is turned off. Optivo Pro shows no ads and does not start the Ads SDK.</p>
 
-    <h2>5. Subscriptions</h2>
+    <h2>6. Subscriptions</h2>
     <p>Optivo Pro is a Google Play subscription, processed by Google Play Billing under Google Play's terms and privacy policy. The app receives only the subscription state and stores it on the phone. Evervoya does not receive your payment details. Google's Play Billing Library itself sends usage diagnostics to Google; these contain no workspace data.</p>
 
-    <h2>6. What Optivo does not collect</h2>
+    <h2>7. What Optivo does not collect</h2>
     <p>No IMEI, MAC address, hardware serial, SMS, contacts, call logs or precise location. Optivo adds no analytics or crash-reporting SDK of its own.</p>
 
-    <h2>7. Permissions</h2>
+    <h2>8. Permissions</h2>
     <table>
       <tr><th>Permission</th><th>Used for</th></tr>
-      <tr><td>Internet, network state</td><td>Scans, PageSpeed with your own key, AI you choose, ads, purchases, feedback.</td></tr>
+      <tr><td>Internet, network state</td><td>Scans, PageSpeed with your own key, optional sign-in and device sync, AI you choose, ads, purchases, feedback.</td></tr>
       <tr><td>Advertising ID (added by the Ads SDK)</td><td>Ads in the free version, subject to consent.</td></tr>
     </table>
 
-    <h2>8. Third-party services</h2>
-    <p>Google PageSpeed Insights API and Chrome UX Report API (with your own key), Google Mobile Ads SDK and User Messaging Platform, Google Play Billing, Google Apps Script (feedback relay), and the AI provider or AI app you choose (for example Google Gemini or OpenAI). Each is governed by its own terms and privacy policy. You are responsible for any fees your own AI provider charges you.</p>
+    <h2>9. Third-party services</h2>
+    <p>Google PageSpeed Insights API and Chrome UX Report API (with your own key), Google Identity Services ("Sign in with Google", for the optional identity-only sign-in), the Google Drive API (the app's private "app data" folder only, for the optional Pro device sync), Google Mobile Ads SDK and User Messaging Platform, Google Play Billing, Google Apps Script (feedback relay), and the AI provider or AI app you choose (for example Google Gemini or OpenAI). Each is governed by its own terms and privacy policy. You are responsible for any fees your own AI provider charges you.</p>
 
-    <h2 id="delete">9. Delete your data</h2>
+    <h2 id="delete">10. Delete your data</h2>
     <p>Optivo creates no account on an Evervoya server, so there is no online account to delete. In the app:</p>
     <ul>
-      <li><em>Settings → Privacy → Delete all local data</em> erases websites, scans, plans, keys and settings;</li>
+      <li><em>Settings → Privacy → Delete all local data</em> erases websites, scans, plans, keys, sync keys and settings;</li>
+      <li><em>Settings → Account → Sign out</em> removes the signed-in Google name, e-mail and photo from the phone;</li>
+      <li><em>Settings → Device sync → Delete cloud copy</em> removes the encrypted sync files from your Google Drive app folder, and <em>Turn off</em> stops syncing on that device;</li>
       <li><em>Settings → PageSpeed</em> and <em>Settings → AI</em> let you remove a key you added;</li>
       <li>a backup file you exported is yours to delete wherever you saved it.</li>
     </ul>
-    <p>Uninstalling the app removes all data on the phone. If you used Google sign-in in a version before 0.1.4, you can remove that old access in your Google Account under Security → Third-party apps. Feedback e-mails can be deleted on request to <a href="mailto:evervoya.studio@gmail.com?subject=Optivo%20data%20deletion">evervoya.studio@gmail.com</a>.</p>
+    <p>Uninstalling the app removes all data on the phone. You can remove Optivo's Google access (the optional sign-in and the Drive app-folder sync) in your Google Account under <em>Security → Third-party apps and services</em>. Feedback e-mails can be deleted on request to <a href="mailto:evervoya.studio@gmail.com?subject=Optivo%20data%20deletion">evervoya.studio@gmail.com</a>.</p>
 
-    <h2>10. Children</h2>
+    <h2>11. Children</h2>
     <p>Optivo is a tool for website owners and is not directed to children under 13 (or the age of digital consent where you live).</p>
 
-    <h2>11. Changes and contact</h2>
+    <h2>12. Changes and contact</h2>
     <p>If the app's data handling changes, the new version is published here with a new effective date. Questions and requests: <a href="mailto:evervoya.studio@gmail.com">evervoya.studio@gmail.com</a>.</p>
     <p class="note">The in-app Disclaimer, Terms of Service and Attributions (Settings → Legal) apply together with this policy.</p>
   </div>
